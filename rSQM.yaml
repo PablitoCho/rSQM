@@ -1,0 +1,41 @@
+prjdir: D:/2017_APCC_SDTP/AIMS_CC
+dbdir: D:/2017_APCC_SDTP/Database
+stndir: User
+stnobsdir: $(prjdir)/Observed/User
+ghcndir: $(prjdir)/Observed/GHCN
+bnddir: $(prjdir)/gis-boundary
+qmapdir: $(prjdir)/Downscale/SQM
+syear_obs: 1976     # Starting year of observed data
+eyear_obs: 2005     # Ending year of observed data
+syear_his: 1976     # Starting year of historical period (GCM)
+eyear_his: 2005     # Ending year of historical period (GCM)
+syear_scn:         
+  - 2010
+  - 2040
+eyear_scn:
+  - 2039
+  - 2069
+SimAll: FALSE       # Option for simulation all (GCM model, Variable, RCPs) combinations
+ModelNames:
+  - bcc-csm1-1-m    # Beijing Climate Center,  China Meteorological Administration (128x64)
+  - CanESM2         # Canadian Centre for Climate Modelling and Analysis (128x64)
+  - CMCC-CMS        # Centro Euro-Mediterraneo per I Cambiamenti Climatici (192x96)
+  - CSIRO-Mk3-6-0   # Commonwealth Scientific and Industrial Research Organisation in  collaboration with the Queensland Climate Change Centre of Excellence (192x96)
+  - FGOALS-g2       # LASG, Institute of Atmospheric Physics, Chinese Academy of  Sciences; and CESS, Tsinghua University (128x60)
+  - HadGEM2-AO      # National Institute of Meteorological Research, Korea Meteorological Administration (192x145)
+  - inmcm4          # Institute for Numerical Mathematics (180x120)
+  - IPSL-CM5A-LR    # Institut Pierre-Simon Laplace (96x96)
+  - MIROC-ESM       # Japan Agency for Marine-Earth Science and Technology, Atmosphere and Ocean Research Institute, and  National Institute for Environmental Studies (128x64)
+  - MPI-ESM-LR      # Max Planck Institute for Meteorology (MPI-M) (192x96)
+  - NorESM1-M       # Norwegian Climate Centre (144x96)
+RcpNames:
+  - rcp85           # Representative Concentration Pathway (RCP) 8.5 Scenarios
+VarNames:
+  - pr              #Precipitation (mm)
+  - tasmax          #Max. temperature (C)
+  - tasmin          #Min. temperature (C)
+NtlCode: KR
+stnfile: Station-Info.csv   # If you use GHCN data, just leave it blank.
+bndfile: Korea.shp
+OWrite: TRUE
+SRadiation: FALSE

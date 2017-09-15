@@ -1,0 +1,23 @@
+Package: rSQM
+Type: Package
+Title: Quantile Mapping Bias-correction at Station Level for Daily
+        CMIP5 Data
+Version: 1.1.6
+Date: 2017-09-15
+Authors@R: c(person("Jaepil Cho", role=c("aut", "cre"), email="jpcho89@gmail"),
+			       person("Wonil Cho", role="aut", email="pablito@apcc21.org"),
+			       person("Imgook Jung", role="aut", email="igjung@apcc21.org"))
+Author: Jaepil Cho [aut, cre],
+  Wonil Cho [aut],
+  Imgook Jung [aut]
+Maintainer: Wonil Cho <climate.service@apcc21.org>
+Description: This package reads the provided CMIP5 data for each country and  extract values for the given stations and do bias-correction using Quantile-Mapping method.
+License: GPL(>=2)
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Depends: R (>= 3.3.3)
+Imports: ncdf4, zoo, stringr, EcoHydRology, RCurl, dplyr, gsubfn, yaml,
+        mise, reshape2, qmap, ggplot2
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2017-09-14 23:48:38 UTC; jowonil
