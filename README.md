@@ -5,17 +5,6 @@ r package doing Simple Quantile Mapping downscaling technique.
 See https://cran.r-project.org/web/packages/rSQM/index.html
 
 
----
-title: "rSQM workflow"
-author: "APEC Climate Center"
-date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{rSQM workflow}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
-
  Since the workflow is kind of complicated(Don't worry. It's not hard.), this vignette shows you how to run the `rSQM` package to do a downscaling process with CMIP5([Coupled model intercomparison project 5](https://en.wikipedia.org/wiki/Coupled_model_intercomparison_project)) data and observation data. If you want to see more about the data used in this package and APEC climate center, visit our website http://www.apcc21.org.  
   
 ## Arguments yaml file. 
@@ -78,6 +67,7 @@ stndir: $(prjdir)/Observed/Korea # This is the directory to be filed up with obs
 |1969| 1 | 4 | 0     | 0.7   | -10.4 | 2.7       | 0.617       | 16.46     |
 |1969| 1 | 5 | 3.9   | -1    | -8.6  | 4.4       | 0.86        | 8.44      |
 |1969| 1 | 6 | ...   | ...   | ...   | ...       | ...         | ...       |
+
  **Note : Day is month day not Julian format, that is, 2017/2/1 works but 2017/2/32 does not.**  
  Header names are not much critical, but the order is. `Year`, `Month`, `Day`, `Precipitation`, `Tasmax`, `Tasmin`, `Wind Speed`, `Relative Humidity`, and `Solar Radiation` should be in this order. Of course, the unit matters too.
 
@@ -624,6 +614,4 @@ ID108_SQM_CanESM2_rcp45_original.csv
 2. If you have any problem, contact climate.service@apcc21.org
 
 
-Hope this package would be useful. :)
-
-![](http://www.apcc21.org/images/ui/sub/symbol_10.jpg){width=50%}
+Hope this package would be useful. :){width=50%}
