@@ -614,4 +614,4 @@ ID108_SQM_CanESM2_rcp45_original.csv
 2. If you have any problem, contact climate.service@apcc21.org
 
 
-Hope this package would be useful. :){width=50%}
+Hope this package would be useful. :)
